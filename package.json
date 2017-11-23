@@ -1,0 +1,9 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.prod.js",
+    "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
