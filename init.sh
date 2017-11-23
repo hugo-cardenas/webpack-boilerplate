@@ -1,9 +1,17 @@
 #!/bin/bash
-npm init &&
+set -euo pipefail
 
+echo ""
+echo "# Running npm init"
+echo ""
+npm init
+
+echo ""
+echo "# Running npm install --save-dev"
+echo ""
 npm install --save-dev \
     babel-core \
-    babel-loader \ 
+    babel-loader \
     babel-preset-env \
     babel-preset-react \
     clean-webpack-plugin \
@@ -14,10 +22,17 @@ npm install --save-dev \
     uglifyjs-webpack-plugin \
     webpack \
     webpack-dev-server \
-    webpack-merge &&
+    webpack-merge
 
+echo ""
+echo "# Running npm install --save"
+echo ""
 npm install --save \
     react \
-    react-dom &&
+    react-dom
 
-echo "Success!"
+echo ""
+echo "# Success!"
+echo ""
+
+rm ./init.sh
