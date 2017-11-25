@@ -12,6 +12,7 @@ echo ""
 npm install --save-dev \
     babel-core \
     babel-loader \
+    babel-plugin-transform-runtime \
     babel-preset-env \
     babel-preset-react \
     clean-webpack-plugin \
