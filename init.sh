@@ -20,6 +20,8 @@ npm install --save-dev \
     file-loader \
     html-webpack-plugin \
     style-loader \
+    stylus \
+    stylus-loader \
     uglifyjs-webpack-plugin \
     webpack \
     webpack-dev-server \
