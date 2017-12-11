@@ -9,6 +9,7 @@ npm init
 echo ""
 echo "# Running npm install --save-dev"
 echo ""
+# raf: https://github.com/facebookincubator/create-react-app/issues/3199
 npm install --save-dev \
     babel-core \
     babel-loader \
@@ -21,7 +22,7 @@ npm install --save-dev \
     file-loader \
     html-webpack-plugin \
     jest \
-    raf \ # https://github.com/facebookincubator/create-react-app/issues/3199
+    raf \
     style-loader \
     stylus \
     stylus-loader \
