@@ -12,6 +12,7 @@ echo ""
 npm install --save-dev \
     babel-core \
     babel-loader \
+    babel-plugin-transform-object-rest-spread \
     babel-plugin-transform-runtime \
     babel-preset-env \
     babel-preset-react \
@@ -19,6 +20,9 @@ npm install --save-dev \
     css-loader \
     file-loader \
     html-webpack-plugin \
+    jest \
+    # https://github.com/facebookincubator/create-react-app/issues/3199
+    raf \
     style-loader \
     stylus \
     stylus-loader \

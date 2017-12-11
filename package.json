@@ -4,6 +4,15 @@
   "scripts": {
     "build": "webpack --config ./config/webpack.prod.js",
     "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/mocks/fileMock.js",
+      "\\.(css|less|styl)$": "<rootDir>/test/mocks/styleMock.js"
+    },
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   }
 }

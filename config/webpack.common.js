@@ -2,23 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: './src/index.js',
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env', 'react'],
-                        plugins: [
-                            ["transform-runtime", {
-                                "polyfill": false
-                            }]
-                        ]
-                    }
-                }
+                use: ['babel-loader']
             },
             {
                 test: /\.css$/,
