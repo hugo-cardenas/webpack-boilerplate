@@ -21,8 +21,7 @@ npm install --save-dev \
     file-loader \
     html-webpack-plugin \
     jest \
-    # https://github.com/facebookincubator/create-react-app/issues/3199
-    raf \
+    raf \ # https://github.com/facebookincubator/create-react-app/issues/3199
     style-loader \
     stylus \
     stylus-loader \
