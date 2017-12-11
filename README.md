@@ -1,5 +1,5 @@
 # webpack-boilerplate
-My Webpack boilerplate (Webpack, ES6, React)
+My Webpack boilerplate (Webpack, ES6, React, Stylus)
 
 ## Instructions
 
