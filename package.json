@@ -1,19 +1,19 @@
 {
-  "name": "name",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "webpack --config ./config/webpack.prod.js",
-    "format": "prettier --single-quote --tab-width 4 --write '**/*.{js,json}'",
-    "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
-    "test": "jest test"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/mocks/fileMock.js",
-      "\\.(css|less|styl)$": "<rootDir>/test/mocks/styleMock.js"
+    "name": "name",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "webpack --config ./config/webpack.prod.js",
+        "format":
+            "prettier --single-quote --tab-width 4 --write '**/*.{js,json}'",
+        "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
+        "test": "jest test"
     },
-    "setupFiles": [
-      "raf/polyfill"
-    ]
-  }
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+                "<rootDir>/test/mocks/fileMock.js",
+            "\\.(css|less|styl)$": "<rootDir>/test/mocks/styleMock.js"
+        },
+        "setupFiles": ["raf/polyfill"]
+    }
 }
