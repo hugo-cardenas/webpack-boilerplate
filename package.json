@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --config ./config/webpack.prod.js",
+    "format": "prettier --single-quote --tab-width 4 --write '**/*.{js,json}'",
     "start": "webpack-dev-server --open --config ./config/webpack.dev.js",
     "test": "jest test"
   },

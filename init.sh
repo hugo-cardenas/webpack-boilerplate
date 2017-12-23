@@ -22,6 +22,7 @@ npm install --save-dev \
     file-loader \
     html-webpack-plugin \
     jest \
+    prettier \
     raf \
     style-loader \
     stylus \
